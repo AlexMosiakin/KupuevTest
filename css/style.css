@@ -659,3 +659,133 @@ header {
   font-size: 18px;
   line-height: 25px;
 }
+
+.for-whom-wrapper {
+  background: linear-gradient(
+    51.62deg,
+    #fdf4f5 -0.94%,
+    #f8eae2 33.37%,
+    #faebdf 63.39%
+  );
+  border-radius: 16px;
+  margin: 0 40px;
+  padding-bottom: 140px;
+}
+
+.from-whom-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 44px 55px 38px 55px;
+  position: relative;
+}
+
+.from-whom-card h4 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.from-whom-card h4,
+.from-whom-card p {
+  z-index: 2;
+  position: relative;
+}
+
+.from-whom-card img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.from-whom-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.for-whom-blue {
+  position: absolute;
+  top: -100px;
+  left: -156px;
+}
+
+.for-whom-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.for-whom-header img {
+  position: absolute;
+  right: 0;
+  top: -107px;
+}
+
+.for-whom-header h2 {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 68px;
+  max-width: 729px;
+  margin: 62px 0 69px 0;
+}
+
+.teachers-section {
+  padding: 140px 0;
+}
+
+.teachers-section h2 {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 68px;
+  margin-bottom: 82px;
+}
+
+.teacher-card {
+  position: relative;
+  max-width: 340px;
+}
+
+.teacher-icon {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  max-width: 80px !important;
+}
+
+.teacher-photo {
+  max-width: 300px !important;
+  margin: 0 auto;
+}
+
+.teacher-card h4 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.teacher-card span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  margin: 20px 0;
+  opacity: 0.3;
+  display: block;
+}
+
+.teacher-card p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.teachers-carousel .owl-nav {
+  margin: 0;
+  position: absolute;
+  top: -185px;
+  right: 0;
+}
