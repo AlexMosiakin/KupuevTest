@@ -6,12 +6,17 @@ $('.teachers-carousel').owlCarousel({
     dots:false,
     responsive:{
         0:{
+            items:1,
+            stagePadding: 45,
+        },
+        375:{
+            items:3,
+            stagePadding: 45
+        },
+        769:{
             items:4
         },
-        600:{
-            items:4
-        },
-        2560:{
+        1024:{
             items:4
         }
     }
@@ -25,12 +30,17 @@ $('.review-cards').owlCarousel({
     dots:false,
     responsive:{
         0:{
+            items:1,
+            stagePadding: 30,
+        },
+        375:{
+            items:1,
+            stagePadding: 80,
+        },
+        769:{
             items:2
         },
-        600:{
-            items:2
-        },
-        2560:{
+        1024:{
             items:2
         }
     }
