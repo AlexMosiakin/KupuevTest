@@ -62,6 +62,16 @@ $(".question-item").click(function(e) {
     }
 });
 
+$(".menu-mob-link").click(function() {
+    $(".menu-mobile").removeClass("menu-hide");
+    $(".menu-overlay").addClass("menu-overlay-active");
+});
+
+$(".menu-close").click(function() {
+    $(".menu-mobile").addClass("menu-hide");
+    $(".menu-overlay").removeClass("menu-overlay-active");
+});
+
 
 // $(".question-item").click(function(e) {
 //     e.preventDefault();
