@@ -193,6 +193,10 @@ header {
   align-items: center;
 }
 
+.main-screen-second-btn span {
+  margin: 0 auto;
+}
+
 .button {
   font-weight: bold;
   text-transform: uppercase;
@@ -200,6 +204,7 @@ header {
   line-height: 22px;
   border-radius: 12px;
   font-size: 16px;
+  transition: 0.5s;
 }
 
 .button-black {
@@ -207,9 +212,17 @@ header {
   color: #fff;
 }
 
+.button-black:hover {
+  background: #3f3f3f;
+}
+
 .button-white {
   background: #fff;
   color: #1a1a1a;
+}
+
+.button-white:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .circle-arrow {
@@ -297,6 +310,28 @@ header {
   font-size: 22px;
   line-height: 35px;
   margin-top: 46px;
+}
+
+.about-photo-disable {
+  display: none;
+}
+
+.about-span1:hover {
+  background: #feecb6;
+}
+
+.about-span2:hover {
+  background: #ffcdb8;
+}
+
+.about-span3:hover {
+  background: #afcaff;
+}
+
+.about-span {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .about-bottom-wrapper {
@@ -399,6 +434,11 @@ header {
   position: relative;
   display: flex;
   align-items: center;
+  transition: 0.5s;
+}
+
+.lib-card-item:hover {
+  box-shadow: 0px 4px 10px #ceb8a4;
 }
 
 .lib-card-item ul {
@@ -850,6 +890,22 @@ header {
   border-radius: 16px;
   padding: 29px 51px 32px 34px;
   margin-bottom: 21px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.lesson-card-active {
+  background: #ffffff;
+  box-shadow: 0px 4px 10px #ceb8a4;
+}
+
+.player-wrapper-disable {
+  display: none;
+}
+
+.lesson-card:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 10px #ceb8a4;
 }
 
 .lesson-card:last-of-type {
@@ -936,6 +992,10 @@ header {
   position: relative;
 }
 
+.review-text-active {
+  max-height: 100% !important;
+}
+
 .review-hide-text {
   position: absolute;
   width: 100%;
@@ -943,6 +1003,10 @@ header {
   background: linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   top: 40px;
   left: 0;
+}
+
+.review-open-text {
+  display: none;
 }
 
 .review-text p {
@@ -958,6 +1022,7 @@ header {
   color: #0c24fa;
   text-transform: uppercase;
   margin: 30px 0 42px 0;
+  cursor: pointer;
 }
 
 .review-author {

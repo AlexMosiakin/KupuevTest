@@ -82,6 +82,69 @@ $(".menu-close").click(function() {
     $(".menu-overlay").removeClass("menu-overlay-active");
 });
 
+$(".lesson-card-phys").click(function() {
+    $(".phys-lesson").removeClass("player-wrapper-disable");
+    $(".liter-lesson").addClass("player-wrapper-disable");
+    $(".alg-lesson").addClass("player-wrapper-disable");
+
+    $(".lesson-card-phys").addClass("lesson-card-active");
+    $(".lesson-card-liter").removeClass("lesson-card-active");
+    $(".lesson-card-alg").removeClass("lesson-card-active");
+});
+
+$(".lesson-card-liter").click(function() {
+    $(".liter-lesson").removeClass("player-wrapper-disable");
+    $(".phys-lesson").addClass("player-wrapper-disable");
+    $(".alg-lesson").addClass("player-wrapper-disable");
+
+    $(".lesson-card-liter").addClass("lesson-card-active");
+    $(".lesson-card-phys").removeClass("lesson-card-active");
+    $(".lesson-card-alg").removeClass("lesson-card-active");
+});
+
+$(".lesson-card-alg").click(function() {
+    $(".alg-lesson").removeClass("player-wrapper-disable");
+    $(".liter-lesson").addClass("player-wrapper-disable");
+    $(".phys-lesson").addClass("player-wrapper-disable");
+
+    $(".lesson-card-alg").addClass("lesson-card-active");
+    $(".lesson-card-liter").removeClass("lesson-card-active");
+    $(".lesson-card-phys").removeClass("lesson-card-active");
+});
+
+
+$(".about-span1").click(function() {
+    $(".about-photo1").removeClass("about-photo-disable");
+    $(".about-photo2").addClass("about-photo-disable");
+    $(".about-photo3").addClass("about-photo-disable");
+});
+$(".about-span2").click(function() {
+    $(".about-photo2").removeClass("about-photo-disable");
+    $(".about-photo1").addClass("about-photo-disable");
+    $(".about-photo3").addClass("about-photo-disable");
+});
+$(".about-span3").click(function() {
+    $(".about-photo3").removeClass("about-photo-disable");
+    $(".about-photo2").addClass("about-photo-disable");
+    $(".about-photo1").addClass("about-photo-disable");
+});
+
+// $(".review-open").click(function() {
+//     let currentReviewObj = $(this);
+//     let currentReview = currentReviewObj[0];
+//     if(currentReview.classList.contains('review-open-active')){
+//         $(this).parent('.review-item').children('.review-text').children('p').removeClass("review-text-active");
+//         $(this).parent('.review-item').children('.review-text').children(".review-hide-text").removeClass("review-open-text");
+//         $(this).removeClass("review-open-active");
+//         $(this).innerText="закрыть";
+//     }else{
+//         $(this).parent('.review-item').children('.review-text').children('p').addClass("review-text-active");
+//         $(this).parent('.review-item').children('.review-text').children(".review-hide-text").addClass("review-open-text");
+//         $(this).addClass("review-open-active");
+//         $(this).innerText="читать полностью";
+//     }
+// });
+
 
 // $(".question-item").click(function(e) {
 //     e.preventDefault();

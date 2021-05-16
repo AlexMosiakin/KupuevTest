@@ -162,13 +162,15 @@
         <div class="container about-top">
             <div class="about-left">
                 <h2>О kupuev online</h2>
-                <p>Мы - инновационная онлайн платформа, рассчитанная для обучающихся 
-                1-11 классов в Центральной Азии на основе прогрессивной методики Академии Купуева. <br><br>
-                У нас персонализированный подход к обучению – не только выбор 
+                <p>Мы - <span class="about-span about-span1">инновационная онлайн платформа</span>, рассчитанная для обучающихся 
+                1-11 классов в Центральной Азии на основе прогрессивной <span class="about-span about-span2">методики Академии Купуева.</span> <br><br>
+                У нас <span class="about-span about-span3">персонализированный подход</span> к обучению – не только выбор 
                 изучения предмета, но и скорость прохождения курса. </p>
             </div>
             <div class="about-right">
-                <img src="./img/aboutPhoto.png" alt="О компании фото">
+                <img class="about-photo1" src="./img/aboutPhoto.png" alt="О компании фото">
+                <img class="about-photo2 about-photo-disable" src="./img/aboutPhoto3.png" alt="О компании фото">
+                <img class="about-photo3 about-photo-disable" src="./img/aboutPhoto2.png" alt="О компании фото">
             </div>
         </div>
         <div class="container about-bottom-wrapper">
@@ -525,25 +527,27 @@
         <div class="lesson-example container">
             <h2>Посмотрите примеры нескольких наших уроков</h2>
             <div class="lesson-video-wrapper">
-                <div class="player-wrapper">
-                    <iframe src="https://www.youtube.com/embed/WV9roeyPUzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="player-wrapper ">
+                    <iframe class="phys-lesson" src="https://www.youtube.com/embed/WV9roeyPUzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="player-wrapper-disable liter-lesson" src="https://www.youtube.com/embed/CphTuUfKvj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="player-wrapper-disable alg-lesson" src="https://www.youtube.com/embed/TlbCBG9prnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="lessons-list">
-                    <div class="lesson-card">
+                    <div class="lesson-card lesson-card-phys lesson-card-active">
                         <img src="./img/phys.svg" alt="Физика">
                         <div class="lesson-card-text">
                             <h4>Физика, 9 класс</h4>
                             <p>Инерциальные системы отсчета. Первый закон Ньютона</p>
                         </div>
                     </div>
-                    <div class="lesson-card">
+                    <div class="lesson-card lesson-card-liter">
                         <img src="./img/liter.svg" alt="Литература">
                         <div class="lesson-card-text">
                             <h4>Литература, 5 класс</h4>
                             <p>Инерциальные системы отсчета. Первый закон Ньютона</p>
                         </div>
                     </div>
-                    <div class="lesson-card">
+                    <div class="lesson-card lesson-card-alg">
                         <img src="./img/alg.svg" alt="Алгебра">
                         <div class="lesson-card-text">
                             <h4>Алгебра, 9 класс </h4>
