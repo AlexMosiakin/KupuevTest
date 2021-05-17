@@ -1,3 +1,56 @@
+let menuWrapper = $("header");
+let menu = $(".menu-wrapper");
+let mainh = $(".main-screen").outerHeight();
+$(window).scroll(function() {
+    let top = $(this).scrollTop();
+        if (top >= mainh) {
+            menuWrapper.addClass("menu-fixed");
+            menu.addClass("menu-margin");
+            // let menuWrapper = document.createElement("div");
+            // menuWrapper.classList.add("menu-wrapper");
+            // menu.wrap(menuWrapper);
+        } else if (top <= mainh) {
+            menuWrapper.removeClass("menu-fixed");
+            menu.removeClass("menu-margin");
+            // menuWrapper.remove();
+        }
+});
+
+// let html = $("html");
+// let cards = document.querySelector(".hor-scroll-cards-wrapper");
+// let cardsWidth = $(".hor-scroll-cards-wrapper").outerWidth();
+// $(window).on('scroll', () => { // По скроллу страници запускаеть функия
+//     // В первую переменную мы получаем координаты относительно верха блока который нам нужен
+//     // Во вторую мы получаем вертикальную позиицию скролла окна браузера
+//       let blockPosition = $('.hor-scroll').offset().top;
+//       windowScrollPosition = $(window).scrollTop();
+//       let windowScrollPositionBottom = $(window).scrollTop() + $(window).height();
+//       let step = 100;
+//       $(window).bind('mousewheel', (e) => {
+//             if( blockPosition < windowScrollPosition) {
+//             html.addClass("stop-scroll");
+//             if (e.originalEvent.wheelDelta >= 0) {
+//                 step = step - 100;
+//                 cards.style.transform = `translateX(`+ -step +`px)`;
+//             }
+//             else {
+//                 step = step + 100;
+//                 cards.style.transform = `translateX(`+ -step +`px)`;
+//                 if(step > cardsWidth){
+//                     html.removeClass("stop-scroll");
+//                     cards.style.transform = `translateX(`+ -cardsWidth +`px)`;
+//                     cardsWidth = 0;
+//                     $(".hor-scroll-cards-wrapper").addClass('going-down')
+//                 }
+//             }
+//         }
+
+//         // let step = 100;
+//         // step = step + 100;
+//         // console.log(step);
+//        });
+//   });
+
 $('.teachers-carousel').owlCarousel({
     loop:true,
     margin:20,
@@ -9,7 +62,7 @@ $('.teachers-carousel').owlCarousel({
             items:1,
             stagePadding: 45,
         },
-        375:{
+        450:{
             items:3,
             stagePadding: 45
         },
@@ -33,7 +86,7 @@ $('.review-cards').owlCarousel({
             items:1,
             stagePadding: 30,
         },
-        375:{
+        450:{
             items:1,
             stagePadding: 80,
         },
@@ -127,6 +180,27 @@ $(".about-span3").click(function() {
     $(".about-photo3").removeClass("about-photo-disable");
     $(".about-photo2").addClass("about-photo-disable");
     $(".about-photo1").addClass("about-photo-disable");
+});
+
+$(".link").click(function() {
+    $(".menu-link img").toggleClass("arrow-rotate");
+    $(".drop-down").toggleClass("drop-down-active");
+});
+
+$('.lib-link').on('click', function() {
+    $('html,body').animate({scrollTop:$('.library-section').offset().top+"px"},{duration:1E3});
+});
+$('.teach-link').on('click', function() {
+    $('html,body').animate({scrollTop:$('.teachers-section').offset().top+"px"},{duration:1E3});
+});
+$('.rev-link').on('click', function() {
+    $('html,body').animate({scrollTop:$('.review-section-wrapper').offset().top+"px"},{duration:1E3});
+});
+$('.price-link').on('click', function() {
+    $('html,body').animate({scrollTop:$('.price-section-wrapper').offset().top+"px"},{duration:1E3});
+});
+$('.arrowUp').on('click', function() {
+    $('html,body').animate({scrollTop:$('.main-screen').offset().top+"px"},{duration:1E3});
 });
 
 // $(".review-open").click(function() {
