@@ -1565,7 +1565,7 @@ header-mobile-wrapper-login {
 
 /*Адаптив*/
 
-@media (max-width: 1440px) {
+@media (max-width: 1550px) {
   .container {
     max-width: 1120px;
   }
@@ -2104,7 +2104,7 @@ header-mobile-wrapper-login {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .header-nav-wrapper a {
     display: none;
   }
@@ -2112,6 +2112,9 @@ header-mobile-wrapper-login {
     display: none;
   }
   .header-login-wrapper {
+    display: none;
+  }
+  .header-mobile-wrapper-login {
     display: none;
   }
   .start-learn span {
@@ -2802,7 +2805,7 @@ header-mobile-wrapper-login {
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 950px) {
   html {
     margin-top: 8px;
   }
@@ -3250,7 +3253,10 @@ header-mobile-wrapper-login {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
+  .header-mobile-wrapper-login {
+    display: block;
+}
   .switch-lang {
     padding: 5px 30px;
     max-width: 125px;

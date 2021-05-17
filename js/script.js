@@ -62,14 +62,14 @@ $('.teachers-carousel').owlCarousel({
             items:1,
             stagePadding: 45,
         },
-        450:{
+        500:{
             items:3,
             stagePadding: 45
         },
-        769:{
+        950:{
             items:4
         },
-        1024:{
+        1200:{
             items:4
         }
     }
@@ -86,14 +86,14 @@ $('.review-cards').owlCarousel({
             items:1,
             stagePadding: 30,
         },
-        450:{
+        500:{
             items:1,
             stagePadding: 80,
         },
-        769:{
+        950:{
             items:2
         },
-        1024:{
+        1200:{
             items:2
         }
     }
